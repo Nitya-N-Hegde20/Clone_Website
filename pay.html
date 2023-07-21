@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <style>
+        body{
+            
+           
+            font-family: sans-serif;
+            background-color: rgb(44, 42, 42);
+            
+        }
+        input{
+        padding: 5px;
+            height:37px;
+            width: 400px;
+            margin-top: 5px;
+            margin-bottom:18px;
+        border: 1px light grey
+        }
+        #details{
+        
+        margin-left:500px;
+            font-weight:lighter;
+            color: #000000;
+            font:16px ,montserrat,sans-serif;
+            
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top:10px;
+            font-size: 50px;
+            font-weight: lighter;
+            color: rgb(253, 0, 0);
+            margin-left: 20px;
+
+        }
+        p{
+            margin-left: 500px;
+            margin-top: -40px;
+            margin-bottom: 40px;
+            color: white;
+            font-size: 30px;
+        }
+        #pay{
+            border:1px solid red;
+            background-color: red;
+        font-weight: bold;
+        color:white;
+        height:42px;
+        font-size: 17px;
+        border-radius: 5px;
+        
+    width: 410px;}
+    a{
+        text-decoration: none;
+        color: black;
+    
+    }
+a{
+    color: white;
+}
+    a:hover{
+        
+        text-decoration: underline;
+    }
+    #details>div>input:first-child{
+        background-color: rgb(44, 42, 42);
+        border-color: white;
+        border-radius: 5px;
+        height: 50px;
+        color: white;
+        font-size: 25px;
+        
+    }
+
+    </style>
+</head>
+<body><div id="container">
+    <h1>Pay now</h1>
+    <p>Please fill in the fields below:</p>
+    <form>
+        <div id ="details">
+          
+            <div><input id="firstname" tpye="text" placeholder="First Name"/></div>
+   
+            <div><input id="lastname" type="text" placeholder="Last  Name" /></div>
+   
+            <div><input id="email" type="text"  placeholder="Email" required/></div>
+            <div><input type="number" placeholder="Enter Credit/Debit Card number" required/></div>
+            <div><input type="number" placeholder="Enter CVV number" required/></div> 
+            <div><input type="month" required></div> 
+    <input  type ="submit"  onclick="succ()"  value="PAY" >
+    
+    </div></form>
+</div>
+</body>
+
+</html>
+<script>
+    function succ(){
+        alert("Payment successful");
+
+        
+    }
+    
+</script>
